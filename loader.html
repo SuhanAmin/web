@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-image:url("logo.jpg") ;
+                background-size: 60%;
+                background-position: center;
+            display: flex;
+           
+            justify-content: center;
+            align-items: center;
+            position: relative;
+                
+               
+            }
+            .container{
+                
+                width:100%;
+                min-height:100vh;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .text{
+                color:white;
+                margin-bottom: 25px;
+                letter-spacing: 2px;
+
+            }
+            .loading{
+                width:100%;
+                height:auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+            .loading .line-box{
+                padding:2px;
+                width:40%;
+                height:20px;
+                border:2px solid black;
+                border-radius: 20px;
+
+            }
+            .loading .line-box .line{
+                height:20px;
+                border-radius: 20px;
+                background:black;
+                animation:loading 5s forwards cubic-bezier(0,0,0,0);
+            }
+            @keyframes loading{
+                0%{
+                    width:0%;
+
+                }
+                100%{
+                    width:100%;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="text">
+                <h1>Loading...</h1>
+                </div>
+                <div class="loading">
+                    <div class="line-box">
+
+                    
+                    <div class="line"></div>
+
+                    </div>
+                </div>
+            </div>
+            <script>
+                  setTimeout(function() {
+            window.location.href = "register.html";
+        }, 5000);
+            </script>
+        
+    </body>
+</html>
