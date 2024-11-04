@@ -61,6 +61,10 @@
             alert('successfully logged in')
             document.getElementById('loginForm').addEventListener('submit', function(event) {
                 event.preventDefault();
+                var username=document.getElementById("username").value;
+                var password=document.getElementById("password").value;
+                localStorage.setItem('User Name',username);
+                localStorage.setItem('Password',password);
             window.location.href='proj.html';
         });
         }
