@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: hsl(0, 0%, 0%);
+            background-size: 400% 400%;
+            min-height: 100vh; 
+            overflow-x: hidden;
+        }
+         h1 {
+            font-size: 3rem;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            opacity: 0.8;
+        }
+        header {
+            background:hsl(292, 100%, 18%);
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 20%;
+            z-index: 10;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: 40px;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+        }
+        header h1{
+            margin-top:25px ;
+            text-align: center;
+            text-shadow: 5px 5px 30px goldenrod;
+        }
+        .logo{
+            height: 80%;
+            width: 8%;
+            position: absolute;
+            background-image: url('can100.jpg');
+            background-position: center;
+            background-size: cover;
+            left: 80%;
+            top:10%;
+            box-shadow: 0px 0px 10px gold;
+            border-radius: 50%;
+        }
+        .logo1{
+            height: 80%;
+            width: 8%;
+            position: absolute;
+            background-image: url('can1.jpg');
+            background-position: center;
+            background-size: cover;
+            left: 10%;
+            top:10%;
+            box-shadow: 0px 0px 10px gold;
+            border-radius: 50%;
+        }
+      .footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 10%;
+        background-color: hsl(292, 100%, 18%);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 10; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .footer button{
+        margin: 0 10px;
+        padding: 10px 20px;
+        background-color: transparent;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .footer button:hover{
+       text-shadow: 0px 0px 10px rgb(0, 255, 80);
+        color:rgb(0, 255, 80);
+      }
+      
+      a{
+        color: #e0e0e0;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+        .active{
+            text-shadow: 0px 0px 10px rgb(1, 246, 79);
+          
+        }
+       
+        #image-container {
+            position: relative;
+            width: 500px;
+            height: 300px;
+            overflow: hidden;   
+        }
+        figure{
+            position: absolute;
+            margin: 0;
+            left: 0;
+            width: 500%;
+            height: 100%;
+           animation: slider 10s linear infinite;
+        }
+        figure img {
+            float:left;
+            height: 100%;
+            width:20%;
+        }
+       
+        @keyframes slider{
+            0%{
+                left:0;
+            }
+            20%{
+                left:0;
+            }
+            25%{
+                left:-100%;
+            }
+            45%{
+                left:-100%;
+            }
+            50%{
+                left:-200%;
+            }
+            70%{
+                left:-200%;
+            }
+            75%{
+                left:-300%;
+            }
+            95%{
+                left:-300%;
+            }
+            100%{
+                left:-400%;
+            }
+        }
+        .imgbody{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .imgbody1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20%;
+            height: 100vh;
+            color: white;
+        }
+        .imgbody2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 110vh;
+            color: white;
+        }
+        .course{
+            display: flex;
+            flex-direction: column;
+           padding: 20px;
+           width:20%;
+            gap:40px;
+           
+           
+        }
+        ul{
+            margin-left: 29px;
+            font-size: 25px;
+        }
+            
+      
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo1"></div>
+        <h1>CANARA COLLEGE</h1>
+        <div class="logo"></div>
+    </header>
+    <section id="home" class="imgbody">
+        <div id="image-container">
+            <figure>
+            <img  src="can3.jpeg" alt="Image 1">
+            <img  src="can1.jpeg" alt="Image 2">
+            <img  src="can4.jpeg" alt="Image 1">
+            <img  src="can2.jpeg" alt="Image 1">
+            <img  src="can3.jpeg" alt="Image 1">
+            </figure>
+        </div>
+    </section>
+    <section id="coursess" class="imgbody2">
+        <h3 style="font-size: 30px;margin-top: 30px;"><u>COURSES OFFERED</u></h3><br>
+       <div class="course">
+        <h6 style="font-size: 25px;">UNDER GRADUATE</h6>
+        <ol style="display:flex;flex-direction:column;gap:10px;font-size: 20px;margin-left: 40px;">
+            <li>BCA</li>
+            <li>BBA</li>
+            <li>BCOM</li>
+            <li>BSC</li>
+        </ol>
+        <h6 style="font-size: 25px;">POST GRADUATE</h6>
+        <ol  style="display:flex;flex-direction:column;gap:10px;font-size: 20px;margin-left: 40px;">
+            <li>MCA</li>
+            <li>MCOM</li>
+        </ol>
+       </div>
+    </section>
+    <section id="facilities" class="imgbody2">
+        <h3 style="font-size: 30px;margin-top: 10%;"><u>FACILITIES</u></h3><br>
+        <ul style="opacity: 0.8;display:flex;flex-direction:column;gap:20px;">
+            <li>Canteen:<br>
+                The College has an in-house food court which nourishes with hot and cold beverages, snacks. Different varieties of
+                 light refreshments are served at reasonable and affordable price.</li>
+            <li>Computer and Science Lab:<br>
+                The College has well-resourced science laboratories with adequate and latest equipment’s required to meet the curriculum and syllabi of the programs offered in Science. The Department of Computer Science has well maintained, state-of-the-art, air-conditioned computer 
+                laboratories equipped with the advanced technology, peripherals, latest software with ample table space.</li>
+            <li>A/C Seminar Hall:<br>
+                Centrally air-conditioned seminar hall with a seating capacity of 150 is housed within the campus. It is well-equipped with incandescent lights, good acoustics and audio visual systems. Events such as common meetings of students and faculty members, department activities, seminars, 
+                training programs, symposia, conference, guest lectures, celebrations, gatherings, etc., are organized here.</li>
+            <li>Parking lounge:<br>
+                The College has on its premises ample space for parking two wheelers of the students. However, they are not permitted to bring four wheelers inside the College campus.</li>
+            <li>Sports:<br>
+                As healthy mind resides in a healthy body, the College is committed to promote, encourage and support wide-range of sports and games activities both within and outside the College for the holistic 
+                development of the students.</li>
+        </ul>
+    </section>
+    <section id="about" class="imgbody2">
+        <h3 style="font-size: 30px;margin-top: 2%;"><u>ABOUT COLLEGE</u></h3><br>
+      
+       <p>
+                Canara College was started in 1973 by the C.H.S. Association, 
+                which has managed educational institutions since 1891.It is affiliated with Mangalore University.
+
+        The college provides three years degree courses in Arts, Science, Commerce and Computers to men and women.
+        Over 27 years, they gained 86 ranks in the University Examination, including 10 first ranks.
+        </p>
+        <br>
+        <h3 style="font-size: 30px;"><u>OBJECTIVE</u></h3><br>
+        <p>
+        It is the college's goal to provide a sound education while also fostering good character traits,
+        patriotism and modern sensibilities. Extracurricular activities to also prepare students includes: National Service Scheme, Arts Association, Commerce Association, Science Association, Literary Association, Fine Arts Association, Amateur Speaker's Club, Games and Sports Association, Ladies Association, and blood donation.
+        <br>
+        Every year the university hosts  inter-collegiate events:
+        <ul style="opacity: 0.8;display:flex;flex-direction:column;gap:5px;">
+            <li>Canfest: A National level Inter-Collegiate Commerce meet in which nearly 300 students from 20 colleges participate.</li>
+
+        <li>Scientica: Started in 2005, is a State level Inter-Collegiate Science and IT meet in which about 20 Colleges participate.</li>
+
+
+        <li>Srujana: A University level NSS meet for the students of NSS from various colleges under mangalore university. About 15 Colleges take part each year.</li>
+
+        <li>Cancup: Inter-Collegiate Volleyball Tournament at the University Level in which 25 teams from 20 colleges participate.</li>
+        </ul>
+     </p>
+    </section>
+    <div class="footer">
+        <a href="#home"><button class="btn active" > <i class="fa fa-home"></i><br>HOME</button></a>
+        <a href="#coursess"> <button class="btn "><i class="fa fa-book-open"></i><br> COURSESS</button></a>
+        <a href="#facilities"><button class="btn " ><i class="fa fa-couch"></i> <br>FACILITIES</button></a>
+        <a href="#about"> <button class="btn "><i class="fa fa-building"></i> <br>ABOUT</button></a>
+    </div>
+    <script>
+         document.addEventListener("DOMContentLoaded",()=>{
+        const buttons=document.querySelectorAll('.btn');
+        buttons.forEach(buttn=>{
+        buttn.addEventListener('click',()=>{
+
+            buttons.forEach(bt=>
+            bt.classList.remove("active"));
+            buttn.classList.add("active")
+        });
+    });
+});
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+    </script>
+</body>
+</html>
