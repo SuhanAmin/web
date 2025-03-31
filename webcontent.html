@@ -165,15 +165,7 @@
             align-items: center;
             height: 100vh;
         }
-        .imgbody1{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20%;
-            height: 100vh;
-            color: white;
-        }
+      
         .imgbody2{
             display: flex;
             flex-direction: column;
@@ -222,15 +214,15 @@
        <div class="course">
         <h6 style="font-size: 25px;">UNDER GRADUATE</h6>
         <ol style="display:flex;flex-direction:column;gap:10px;font-size: 20px;margin-left: 40px;">
-            <li>BCA</li>
-            <li>BBA</li>
-            <li>BCOM</li>
-            <li>BSC</li>
+            <li>Bachelor of Computer Science and Application</li>
+            <li>Bachelor of Business Administration</li>
+            <li>Bachelor of Commerce</li>
+            <li>Bachelor of Science</li>
         </ol>
         <h6 style="font-size: 25px;">POST GRADUATE</h6>
         <ol  style="display:flex;flex-direction:column;gap:10px;font-size: 20px;margin-left: 40px;">
-            <li>MCA</li>
-            <li>MCOM</li>
+            <li>Master of Computer Science and Application</li>
+            <li>Master of Commerce</li>
         </ol>
        </div>
     </section>
@@ -293,21 +285,13 @@
         const buttons=document.querySelectorAll('.btn');
         buttons.forEach(buttn=>{
         buttn.addEventListener('click',()=>{
-
             buttons.forEach(bt=>
             bt.classList.remove("active"));
             buttn.classList.add("active")
         });
     });
 });
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+
 
     </script>
 </body>
